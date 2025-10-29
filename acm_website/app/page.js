@@ -31,9 +31,6 @@ export default function Home() {
       </Element>
 
       {/* Do not add h-screen here */}
-      <Element name="events" className="">
-        <Event />
-      </Element>
 
       <Element name="office" className="">
         <Office />

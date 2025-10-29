@@ -8,13 +8,15 @@ export const Office = () => {
     return (
         <div className="w-full max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 h-auto md:h-[1024px]">
             {/* Col 1: Office Bearers Title */}
-            <div className="flex items-center justify-center col-span-2 md:col-span-1">
+            <div className="flex items-center justify-center col-span-2 md:col-span-1 text-white">
                 <h1
-                    className="text-transparent text-[48px] sm:text-[64px] md:text-[80px] lg:text-[98px] font-[900] tracking-widest hover:glitch-text text-[#1b1b23] text-center gentle-pulse rotate-0 md:-rotate-90 italic"
+                    className=" text-[148px] sm:text-[64px] md:text-[80px] lg:text-[98px] font-[900] tracking-widest hover:glitch-text text-[#ffffff] text-center gentle-pulse rotate-0 md:-rotate-90 italic"
                     style={{
                         fontFamily: "Inter, sans-serif",
                         WebkitTextStroke: "2px #F6F2E6",
+                        WebkitTextFillColor: "#ffffff"
                     }}
+
                 >
                     OFFICE <br /> BEARERS
                 </h1>
@@ -38,10 +40,10 @@ export const Office = () => {
                                 className={`rounded-full mx-auto border border-[#F2F2E6] object-cover object-top w-24 h-24 md:w-[11vw] md:h-[11vw] max-w-[128px] max-h-[128px]
                   ${selectedPerson?.id === person.id ? "border-animate" : ""}`}
                             />
-                            <h3 className="text-[clamp(1rem, 2vw, 1.25rem)] font-semibold mt-2">
+                            <h3 className="text-[clamp(1rem, 2vw, 1.25rem)] text-white font-semibold mt-2">
                                 {person.name}
                             </h3>
-                            <h1 className="text-[clamp(1.1rem, 2.5vw, 1.5rem)] text-gray-600">
+                            <h1 className="text-[clamp(1.1rem, 2.5vw, 1.5rem)] text-white">
                                 {person.designation}
                             </h1>
                         </div>
@@ -67,10 +69,10 @@ export const Office = () => {
                                 className={`object-cover object-top rounded-full border border-[#F2F2E6] w-32 h-32 md:w-[18vw] md:h-[20vw] max-w-[200px] max-h-[220px]
                   ${selectedPerson?.id === mentor.id ? "border-animate" : ""}`}
                             />
-                            <h3 className="text-[clamp(1rem, 2vw, 1.25rem)] font-semibold mt-2">
+                            <h3 className="text-white font-semibold mt-2">
                                 {mentor.name}
                             </h3>
-                            <h1 className="text-[clamp(1.1rem, 2.5vw, 1.5rem)] text-gray-600">
+                            <h1 className=" text-white">
                                 {mentor.designation}
                             </h1>
                         </div>
@@ -93,15 +95,15 @@ export const Office = () => {
                             className="w-[min(90%,200px)] sm:w-[min(80%,200px)] md:w-[min(95%,200px)] h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                         />
 
-                        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mt-4 transition-transform duration-300 ease-in-out hover:scale-105">
+                        <h2 className="text-lg text-white sm:text-xl md:text-2xl lg:text-3xl font-bold mt-4 transition-transform duration-300 ease-in-out hover:scale-105">
                             {selectedPerson.name}
                         </h2>
-                        <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 transition-transform duration-300 ease-in-out hover:scale-105">
+                        <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white transition-transform duration-300 ease-in-out hover:scale-105">
                             {selectedPerson.designation}
                         </h3>
 
-                        <p className="mt-2 italic">&quot;{selectedPerson.message}&quot;</p>
-                        <div className="mt-4 flex gap-4 justify-center">
+                        <p className="mt-2 italic text-white">&quot;{selectedPerson.message}&quot;</p>
+                        <div className="mt-4 flex gap-4 justify-center text-white">
                             {selectedPerson.socials?.linkedin && (
                                 <a
                                     href={selectedPerson.socials.linkedin}

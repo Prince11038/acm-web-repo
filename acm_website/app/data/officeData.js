@@ -78,35 +78,7 @@ export const officeBearers = [
       github : "https://github.com/Sheelendra-Scripts"
     },
   },
-  {
-    id: 6,
-    name: "Shivam Sharma",
-    photo: "/os/os6.png",
-    designation: "Web Chair",
-    message: "Bringing ideas to life through events!",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/shivam-sharma-21558b170/",
-      x: "https://x.com/sharmasr6601",
-      instagram : "https://instagram.com/sharmasr.op",
-      email : "mailto:[sharmasr6601@gmail.com]",
-      github : "https://github.com/"
-    },
-  },
-  {
-    id: 10,
-    name: "Shivam Sharma",
-    photo: "/os/os6.png",
-    designation: "Web Chair",
-    message: "Not a mistake, I wanted two images here.",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/shivam-sharma-21558b170/",
-      x: "https://x.com/sharmasr6601",
-      instagram : "https://instagram.com/sharmasr.op",
-      email : "mailto:[sharmasr6601@gmail.com]",
-      github : "https://github.com/rdxpt"
-    },
-  }
-  
+
 ];
 
 export const clubMentors = [
