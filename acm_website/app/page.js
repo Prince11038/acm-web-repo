@@ -2,12 +2,12 @@
 import { Element } from "react-scroll";
 import Background from "./components/Background";
 import Carousel from "./components/carousel";
-import Event from "./components/Events"; // Keep this import unchanged
 import Footer from "./components/Footer";
 import Office from "./components/Office";
 import Team from "./components/Team";
 import Hero from "./components/hero";
 import About from "./components/About";
+import EventComponentnt from "./components/EventComponent";
 
 export default function Home() {
   return (
@@ -31,6 +31,10 @@ export default function Home() {
       </Element>
 
       {/* Do not add h-screen here */}
+
+      <Element name="events" className="">
+        <EventComponentnt />
+      </Element>
 
       <Element name="office" className="">
         <Office />

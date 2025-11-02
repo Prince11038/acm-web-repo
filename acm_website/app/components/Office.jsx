@@ -8,15 +8,13 @@ export const Office = () => {
     return (
         <div className="w-full max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 h-auto md:h-[1024px]">
             {/* Col 1: Office Bearers Title */}
-            <div className="flex items-center justify-center col-span-2 md:col-span-1 text-white">
+             <div className="flex items-center justify-center col-span-2 md:col-span-1">
                 <h1
-                    className=" text-[148px] sm:text-[64px] md:text-[80px] lg:text-[98px] font-[900] tracking-widest hover:glitch-text text-[#ffffff] text-center gentle-pulse rotate-0 md:-rotate-90 italic"
+                    className="text-transparent text-[48px] sm:text-[64px] md:text-[80px] lg:text-[98px] font-[900] tracking-widest hover:glitch-text text-[#1b1b23] text-center gentle-pulse rotate-0 md:-rotate-90 italic"
                     style={{
                         fontFamily: "Inter, sans-serif",
                         WebkitTextStroke: "2px #F6F2E6",
-                        WebkitTextFillColor: "#ffffff"
                     }}
-
                 >
                     OFFICE <br /> BEARERS
                 </h1>
@@ -172,7 +170,7 @@ export const Office = () => {
                         </div>
                     </div>
                 ) : (
-                    <p className="text-gray-500">Click a person to see details</p>
+                    <p className="text-white">Click a person to see details</p>
                 )}
             </div>
         </div>
